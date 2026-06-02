@@ -16,7 +16,7 @@ By the end of today you will:
 
 - Understand what an Integrated Circuit (IC) is
 - Learn how the 555 Timer IC creates oscillations
-- Use an oscilloscope to visualize signals
+- Use a multimeter to measure wave frequency
 - Build a simple electric piano circuit
 - Connect waves to sound and communication
 
@@ -72,6 +72,57 @@ Electrical signals can:
 3. Observe waves with an oscilloscope
 4. Build a sound circuit
 5. Connect waves to communication
+
+---
+
+# The Tyranny of Numbers
+
+By the 1950s engineers had transistors. The problem was connecting thousands of them.
+- Too many wires
+- Many failures
+- Expensive
+
+The solution: Put the entire circuit on one semiconductor chip.
+
+<!-- A chip is a tiny electronic circuit built on a piece of silicon, which is a semiconductor. -->
+
+<!-- INSTRUCTOR NOTES:
+
+This is the birth of the Integrated Circuit (IC). The 555 Timer we use today is an example of an IC. Modern CPUs contain billions of transistors integrated onto a single chip.
+
+-->
+
+
+<!-- TODO: Add image of the first "bug" -->
+
+---
+
+# What Is A Semiconductor?
+
+| Material | Electricity | Example |
+| -------- | ----------- | ------- |
+| Conductors | Let electricity flow easily | Copper, Aluminum, Water with salt |
+| Insulators | Block electricity | Rubber, Plastic, Wood, Glass |
+| Semiconductor | in between | Silicon, Germanium |
+
+
+<!-- INSTRUCTOR NOTES
+
+You can "dope" semiconductor material to make it n-type (extra electrons), or p-type (electron shortage), so you can control the flow
+
+-->
+
+---
+
+# Why Is That Useful?
+
+If we can control when electricity flows, we can build:
+
+- switches
+- logic gates
+- memory
+- computers
+
 
 ---
 
@@ -141,6 +192,13 @@ The 555 Timer can act as:
 - tone generator
 
 ![bg contain right](assets/555-timer.png)
+
+<!-- 
+
+Originally produced over 50 years ago
+Billions made, used in all sorts of products
+
+-->
 
 ---
 
@@ -294,6 +352,22 @@ Smaller values → faster oscillation
 
 ---
 
+# Lab Breakout #1
+
+## 555 Timer LED Blinker Oscillator
+
+Goal:
+
+- Build a blinking LED oscillator
+- Change timing components
+- Observe frequency changes
+
+![bg contain right](assets/555-led-blinker.png)
+
+---
+
+<!-- TODO: multimeter frequency measurement? -->
+
 # Oscilloscope
 
 An oscilloscope lets us SEE electrical signals.
@@ -347,6 +421,9 @@ Ask:
 - What changes when frequency increases?
 - What changes when resistance changes?
 
+
+We can use the frequency tool on the multimeter
+
 -->
 
 ---
@@ -383,8 +460,6 @@ Build a simple tone generator using:
 - buttons
 - speaker
 
-:contentReference[oaicite:0]{index=0}
-
 ![bg contain right](assets/electronic-piano.png)
 
 ---
@@ -413,17 +488,19 @@ Connect directly to music and instruments.
 
 ---
 
-# Lab Breakout #1
+# Debugging Oscillator Circuits
 
-## 555 Timer Oscillator
+If your circuit does NOT work:
 
-Goal:
+<!-- TODO: dimple top 1 to 8 -->
+- verify IC orientation
+- check capacitor polarity
+- inspect loose wires
+- verify power rails
+- test speaker separately
+- verify resistor values
 
-- Build a blinking LED oscillator
-- Change timing components
-- Observe frequency changes
-
-![bg contain right](assets/555-led-blinker.png)
+Timing circuits can fail subtly.
 
 ---
 
@@ -486,35 +563,6 @@ Devices communicate using electrical signals:
 Modern computers constantly send and receive waves.
 
 ![bg contain right](assets/wifi-wave.jpg)
-
----
-
-# Everything Connects
-
-Days 1–4 together:
-
-- Voltage pushes current
-- Transistors control switching
-- Capacitors control timing
-- Oscillators create waves
-- Waves carry sound and data
-
-![bg contain right](assets/computer-motherboard.jpg)
-
----
-
-# Debugging Oscillator Circuits
-
-If your circuit does NOT work:
-
-- verify IC orientation
-- check capacitor polarity
-- inspect loose wires
-- verify power rails
-- test speaker separately
-- verify resistor values
-
-Timing circuits can fail subtly.
 
 ---
 
