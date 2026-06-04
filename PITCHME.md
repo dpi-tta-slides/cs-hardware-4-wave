@@ -41,7 +41,7 @@ Yesterday we learned:
 
 We also learned:
 
-- Transistors act like switches
+- Transistors act like valves / switches
 - Logic gates create binary decisions
 - Modern CPUs contain billions of transistors
 
@@ -289,7 +289,7 @@ An oscillator repeatedly changes between:
 
 This creates a repeating electrical wave.
 
-![bg contain right](assets/square-wave-graph.png)
+![bg contain right](assets/sine-wave-graph.webp)
 
 ---
 
@@ -394,13 +394,13 @@ Can also use multimeter to measure wave frequency.
 
 # Demo: Reading A Wave
 
-Observe on the oscilloscope:
+Observe on the oscilloscope + multimeter:
 
 - voltage rising/falling
 - repeating square wave
 - changing frequency
 
-![bg contain right](assets/scope-square-wave.png)
+![bg contain right](assets/demo-reading-wave.gif)
 
 <!--
 
