@@ -16,11 +16,10 @@ By the end of today you will:
 
 - Understand what an Integrated Circuit (IC) is
 - Learn how the 555 Timer IC creates oscillations
-- Use a multimeter to measure wave frequency
-- Build a simple electric piano circuit
+- Use a multimeter + oscilloscope to measure wave frequency
 - Connect waves to sound and communication
 
-![bg contain right](assets/555-timer-chip.jpg)
+![bg contain right](assets/555-timer-chip.jpeg)
 
 ---
 
@@ -29,7 +28,7 @@ By the end of today you will:
 Yesterday we learned:
 
 - Capacitors store charge
-- RC circuits create timing
+- Resistor Capacitor (RC) circuits create timing
 - Oscillators repeatedly switch ON/OFF
 - Frequency is measured in Hertz (Hz)
 - Computers depend on timing circuits
@@ -61,39 +60,106 @@ Electrical signals can:
 - carry information
 - create sound
 
-![bg contain right](assets/sine-wave.gif)
+![bg contain right](assets/sine-waves.gif)
 
 ---
 
 # Today's Workflow
 
-1. Learn what an IC is
+1. Learn what an integrated circuit (IC) is
 2. Explore the 555 Timer
-3. Observe waves with an oscilloscope
+3. Observe waves with an oscilloscope + multimeter
 4. Build a sound circuit
 5. Connect waves to communication
 
+![bg contain right](assets/pcb-with-integrated-circuit.png)
+
 ---
 
-# The Tyranny of Numbers
+# Some History
 
 By the 1950s engineers had transistors. The problem was connecting thousands of them.
 - Too many wires
 - Many failures
 - Expensive
 
-The solution: Put the entire circuit on one semiconductor chip.
+<!-- INSTRUCTOR NOTES
 
-<!-- A chip is a tiny electronic circuit built on a piece of silicon, which is a semiconductor. -->
+The Tyranny of Numbers 
+
+
+Discrete transistors were a feature of logic design for computers from about 1960, when reliable transistors became economically available, until monolithic integrated circuits displaced them in the 1970s.
+
+-->
+
+![bg contain right](assets/tradic-computer.jpg)
+
+---
+
+![bg contain](assets/sds-930.jpg)
+
+---
+
+# Solution
+
+Put the entire circuit on one semiconductor chip.
+
+![bg contain right](assets/ti-jack-kilby-first-integrated-circuit.jpg)
+
 
 <!-- INSTRUCTOR NOTES:
 
-This is the birth of the Integrated Circuit (IC). The 555 Timer we use today is an example of an IC. Modern CPUs contain billions of transistors integrated onto a single chip.
+This is the birth of the Integrated Circuit (IC).
+
+Modern CPUs contain billions of transistors integrated onto a single chip.
+
+A chip is a tiny electronic circuit built on a piece of silicon, which is a semiconductor.
+
+
+Jack Kilby built the first prototype of an IC while working at Texas Instruments.
 
 -->
 
 
-<!-- TODO: Add image of the first "bug" -->
+---
+
+![bg contain](assets/Kilbys-Germanium-Integrated-Circuit.jpg.webp)
+
+<!-- INSTRUCTOR NOTES:
+
+September 1958
+His device demonstrated that multiple electronic components could be fabricated on a single piece of semiconductor material.
+The prototype used germanium and relied on wire connections.
+
+-->
+
+---
+
+![bg contain](assets/Robert_Noyce_with_Motherboard_1959.png)
+
+<!-- INSTRUCTOR NOTES:
+
+At Fairchild Semiconductor, Noyce independently conceived a more practical version in 1959.
+His design used silicon and the planar manufacturing process developed by Jean Hoerni.
+Crucially, it incorporated metal interconnects directly on the chip, making mass production feasible.
+Modern integrated circuits are much closer to Noyce's implementation than to Kilby's original prototype.
+
+He later went on to found Intel
+
+-->
+
+---
+
+![bg contain](assets/fairchild-micrologic-1.jpeg)
+
+![bg contain](assets/fairchild-micrologic-2.jpeg)
+
+<!-- INSTRUCTOR NOTES
+
+the first major customer for these early ICs was the U.S. military, especially for missile and space programs.
+Civilian electronics did not become a large IC market until later in the 1960s, as prices fell and reliability improved.
+
+-->
 
 ---
 
@@ -114,53 +180,20 @@ You can "dope" semiconductor material to make it n-type (extra electrons), or p-
 
 ---
 
-# Why Is That Useful?
-
-If we can control when electricity flows, we can build:
-
-- switches
-- logic gates
-- memory
-- computers
-
-
----
-
-# Before Integrated Circuits
-
-Early electronics required:
-
-- many individual transistors
-- huge amounts of wiring
-- large physical size
-- high failure rates
-
-![bg contain right](assets/eniac.jpg)
-
----
-
 # Integrated Circuit (IC)
 
 An Integrated Circuit combines many components into one chip.
-
-An IC may contain:
 
 - transistors
 - resistors
 - capacitors
 - logic circuits
 
-![bg contain right](assets/ic-closeup.jpg)
+![bg contain right](assets/zoom-in-microchip.jpg)
 
-<!--
+<!-- INSTRUCTOR NOTES
 
-INSTRUCTOR NOTES:
-
-Compare:
-- discrete breadboard circuits
-- modern chips
-
-A modern CPU is an extremely advanced IC.
+1 micron is one millionth of a meter
 
 -->
 
@@ -176,7 +209,15 @@ Integrated circuits made electronics:
 - more reliable
 - more power efficient
 
-![bg contain right](assets/moore-law-chip.jpg)
+![bg contain right](assets/Moore's_Law_Transistor_Count_1970-2020.png)
+
+<!-- INSTRUCTOR NOTES
+
+An observation that the number of transistors on a microchip roughly doubles every 2 years whereas it's cost is halved over the same time
+
+Gordon Moore, the co-founder of Fairchild Semiconductor and Intel 
+
+-->
 
 ---
 
@@ -191,7 +232,7 @@ The 555 Timer can act as:
 - pulse generator
 - tone generator
 
-![bg contain right](assets/555-timer.png)
+![bg contain right](assets/555-timer-chip.jpeg)
 
 <!-- 
 
@@ -210,7 +251,7 @@ The original chip used:
 
 5k + 5k + 5k = 555
 
-![bg contain right](assets/555-internal-diagram.png)
+![bg contain right](assets/555-schematic.png)
 
 <!--
 
@@ -235,7 +276,7 @@ The 555 Timer has several operating modes:
 
 Today we focus on: **Astable Mode**
 
-![bg contain right](assets/555-astable.gif)
+![bg contain right](assets/555-pinouts.png)
 
 ---
 
@@ -248,7 +289,7 @@ An oscillator repeatedly changes between:
 
 This creates a repeating electrical wave.
 
-![bg contain right](assets/square-wave.gif)
+![bg contain right](assets/square-wave-graph.png)
 
 ---
 
@@ -261,9 +302,7 @@ A square wave rapidly switches:
 - ON
 - OFF
 
-This is extremely important in computing.
-
-![bg contain right](assets/square-wave-graph.png)
+![bg contain right](assets/square-wave.png)
 
 ---
 
@@ -275,9 +314,9 @@ Measured in Hertz (Hz)
 
 - 1 Hz = 1 cycle per second
 - 440 Hz = musical note A
-- GHz = billions of cycles per second
+- GHz = billions (10^9) of cycles per second
 
-![bg contain right](assets/frequency-wave.png)
+![bg contain right](assets/frequency-and-hertz.webp)
 
 ---
 
@@ -293,36 +332,15 @@ Many technologies use oscillating signals:
 - HDMI
 - USB
 
-![bg contain right](assets/wifi-wave.jpg)
-
----
-
-# Computers Use Waves Too
-
-Computers constantly generate timing signals.
-
-Examples:
-
-- CPU clocks
-- USB communication
-- audio signals
-- display signals
-
-![bg contain right](assets/cpu-clock.jpg)
+![bg contain right](assets/music-wave.avif)
 
 ---
 
 # Demo: 555 Timer LED Blinker
 
-The 555 repeatedly charges and discharges a capacitor.
+Let's build an oscillator using the 555 timer integrated circuit.
 
-This creates:
-
-- timing
-- pulses
-- blinking LEDs
-
-![bg contain right](assets/555-led-blinker.png)
+![bg contain right](assets/555-led-oscillator.gif)
 
 <!--
 
@@ -333,22 +351,13 @@ Connect this back to Day 3 RC circuits.
 Key insight:
 The 555 automates the oscillation process.
 
--->
-
----
-
 # What Controls Blink Speed?
 
-Timing depends on:
+- Timing depends on resistor and capacitor values
+- Larger values → slower oscillation
+- Smaller values → faster oscillation
 
-- resistor values
-- capacitor values
-
-Larger values → slower oscillation
-
-Smaller values → faster oscillation
-
-![bg contain right](assets/rc-timing-graph.png)
+-->
 
 ---
 
@@ -359,16 +368,14 @@ Smaller values → faster oscillation
 Goal:
 
 - Build a blinking LED oscillator
-- Change timing components
-- Observe frequency changes
 
-![bg contain right](assets/555-led-blinker.png)
+![bg contain right](assets/555-led-oscillator.gif)
 
 ---
 
 <!-- TODO: multimeter frequency measurement? -->
 
-# Oscilloscope
+# Measure Frequency
 
 An oscilloscope lets us SEE electrical signals.
 
@@ -379,23 +386,9 @@ It displays:
 - wave shape
 - frequency
 
-![bg contain right](assets/oscilloscope.jpeg)
+Can also use multimeter to measure wave frequency.
 
----
-
-# Why Oscilloscopes Matter
-
-Many signals change too fast to see directly.
-
-Oscilloscopes help engineers debug:
-
-- clocks
-- sensors
-- sound
-- communication systems
-- computer hardware
-
-![bg contain right](assets/oscilloscope-waveform.jpg)
+![bg contain right](assets/green-oscilloscope.jpg)
 
 ---
 
@@ -432,21 +425,43 @@ We can use the frequency tool on the multimeter
 
 Speakers convert electrical waves into sound waves.
 
-Faster oscillation → higher pitch
-
-Slower oscillation → lower pitch
-
-![bg contain right](assets/speaker-wave.gif)
-
----
-
-# Piezo Speaker
+<!-- INSTRUCTOR NOTES
 
 A piezo speaker vibrates rapidly when voltage changes.
 
 Rapid vibration creates sound waves in air.
 
-![bg contain right](assets/piezo-diagram.png)
+Faster oscillation → higher pitch
+
+Slower oscillation → lower pitch
+
+-->
+
+![bg contain right](assets/Sound_wave_animation.gif)
+
+---
+
+# Demo: Changing Frequency
+
+Changing resistance or capacitance changes:
+
+- oscillation speed
+- frequency
+- sound pitch
+
+![bg contain right](assets/555-led-oscillator.gif)
+
+<!--
+
+INSTRUCTOR NOTES:
+
+Students should hear:
+- lower resistance → faster oscillation
+- faster oscillation → higher pitch
+
+Connect directly to music and instruments.
+
+-->
 
 ---
 
@@ -460,31 +475,7 @@ Build a simple tone generator using:
 - buttons
 - speaker
 
-![bg contain right](assets/electronic-piano.png)
-
----
-
-# Demo: Changing Pitch
-
-Changing resistance or capacitance changes:
-
-- oscillation speed
-- frequency
-- sound pitch
-
-![bg contain right](assets/pitch-frequency.png)
-
-<!--
-
-INSTRUCTOR NOTES:
-
-Students should hear:
-- lower resistance → faster oscillation
-- faster oscillation → higher pitch
-
-Connect directly to music and instruments.
-
--->
+![bg contain right](assets/555-electric-piano-breadboard.png)
 
 ---
 
@@ -514,7 +505,7 @@ Goal:
 - Change pitch using buttons/resistors
 - Observe waveform on oscilloscope
 
-![bg contain right](assets/electronic-piano.png)
+![bg contain right](assets/555-electric-piano-breadboard.png)
 
 ---
 
@@ -528,22 +519,22 @@ Some wires provide INFORMATION.
 | --- | --- |
 | Power (+) | delivers energy |
 | Ground (-) | return/reference |
-| Signal/Data | carries information |
+| Data | carries information |
 
-![bg contain right](assets/usb-wire-diagram.jpg)
+![bg contain right](assets/usb-wiring-connection.webp)
 
 ---
 
 # Binary Signals
 
-Digital electronics use changing voltage levels.
+Digital electronics rapidly change between HIGH and LOW to send information.
 
 | Voltage | Meaning |
 | --- | --- |
 | LOW | 0 |
 | HIGH | 1 |
 
-By rapidly changing between HIGH and LOW, circuits can send information.
+
 
 ![bg contain right](assets/digital-waveform.png)
 
@@ -551,7 +542,7 @@ By rapidly changing between HIGH and LOW, circuits can send information.
 
 # Modern Electronics Use Signals
 
-Devices communicate using electrical signals:
+Modern computers constantly send and receive waves.
 
 - USB
 - HDMI
@@ -560,9 +551,8 @@ Devices communicate using electrical signals:
 - Bluetooth
 - audio
 
-Modern computers constantly send and receive waves.
 
-![bg contain right](assets/wifi-wave.jpg)
+![bg contain right](assets/em-waves-graphic.jpg)
 
 ---
 
