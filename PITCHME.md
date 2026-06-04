@@ -15,7 +15,7 @@ paginate: true
 By the end of today you will:
 
 - Understand what an Integrated Circuit (IC) is
-- Learn how the 555 Timer IC creates oscillations
+- Creates oscillations with the 555 Timer IC 
 - Use a multimeter + oscilloscope to measure wave frequency
 - Connect waves to sound and communication
 
@@ -123,7 +123,7 @@ Jack Kilby built the first prototype of an IC while working at Texas Instruments
 
 ---
 
-![bg contain](assets/Kilbys-Germanium-Integrated-Circuit.jpg.webp)
+![bg contain](assets/kilby-ic.webp)
 
 <!-- INSTRUCTOR NOTES:
 
@@ -135,7 +135,7 @@ The prototype used germanium and relied on wire connections.
 
 ---
 
-![bg contain](assets/Robert_Noyce_with_Motherboard_1959.png)
+![bg contain](assets/robert-noyce.png)
 
 <!-- INSTRUCTOR NOTES:
 
@@ -209,7 +209,7 @@ Integrated circuits made electronics:
 - more reliable
 - more power efficient
 
-![bg contain right](assets/Moore's_Law_Transistor_Count_1970-2020.png)
+![bg contain right](assets/moores-law.png)
 
 <!-- INSTRUCTOR NOTES
 
