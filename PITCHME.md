@@ -8,6 +8,8 @@ paginate: true
 
 ## Wave
 
+![bg contain right](assets/wave.jpg)
+
 ---
 
 # Goal For Today
