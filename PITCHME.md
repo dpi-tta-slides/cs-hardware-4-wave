@@ -17,7 +17,7 @@ paginate: true
 By the end of today you will:
 
 - Understand what an Integrated Circuit (IC) is
-- Creates oscillations with the 555 Timer IC 
+- Create oscillations with the 555 Timer IC 
 - Use a multimeter + oscilloscope to measure wave frequency
 - Connect waves to sound and communication
 
