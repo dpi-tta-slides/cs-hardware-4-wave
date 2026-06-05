@@ -17,7 +17,7 @@ paginate: true
 By the end of today you will:
 
 - Understand what an Integrated Circuit (IC) is
-- Create oscillations with the 555 Timer IC 
+- Create oscillations with the 555 Timer IC
 - Use a multimeter + oscilloscope to measure wave frequency
 - Connect waves to sound and communication
 
@@ -81,6 +81,7 @@ Electrical signals can:
 # Some History
 
 By the 1950s engineers had transistors. The problem was connecting thousands of them.
+
 - Too many wires
 - Many failures
 - Expensive
@@ -88,7 +89,6 @@ By the 1950s engineers had transistors. The problem was connecting thousands of 
 <!-- INSTRUCTOR NOTES
 
 The Tyranny of Numbers 
-
 
 Discrete transistors were a feature of logic design for computers from about 1960, when reliable transistors became economically available, until monolithic integrated circuits displaced them in the 1970s.
 
@@ -108,7 +108,6 @@ Put the entire circuit on one semiconductor chip.
 
 ![bg contain right](assets/ti-jack-kilby-first-integrated-circuit.jpg)
 
-
 <!-- INSTRUCTOR NOTES:
 
 This is the birth of the Integrated Circuit (IC).
@@ -117,11 +116,9 @@ Modern CPUs contain billions of transistors integrated onto a single chip.
 
 A chip is a tiny electronic circuit built on a piece of silicon, which is a semiconductor.
 
-
 Jack Kilby built the first prototype of an IC while working at Texas Instruments.
 
 -->
-
 
 ---
 
@@ -172,7 +169,6 @@ Civilian electronics did not become a large IC market until later in the 1960s, 
 | Conductors | Let electricity flow easily | Copper, Aluminum, Water with salt |
 | Insulators | Block electricity | Rubber, Plastic, Wood, Glass |
 | Semiconductor | in between | Silicon, Germanium |
-
 
 <!-- INSTRUCTOR NOTES
 
@@ -416,7 +412,6 @@ Ask:
 - What changes when frequency increases?
 - What changes when resistance changes?
 
-
 We can use the frequency tool on the multimeter
 
 -->
@@ -536,8 +531,6 @@ Digital electronics rapidly change between HIGH and LOW to send information.
 | LOW | 0 |
 | HIGH | 1 |
 
-
-
 ![bg contain right](assets/digital-waveform.png)
 
 ---
@@ -552,7 +545,6 @@ Modern computers constantly send and receive waves.
 - WiFi
 - Bluetooth
 - audio
-
 
 ![bg contain right](assets/em-waves-graphic.jpg)
 
