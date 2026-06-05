@@ -437,7 +437,7 @@ Slower oscillation → lower pitch
 
 -->
 
-![bg contain right](assets/Sound_wave_animation.gif)
+![bg contain right](assets/sound-wave-animation.gif)
 
 ---
 
