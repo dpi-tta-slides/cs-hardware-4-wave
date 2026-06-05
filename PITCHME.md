@@ -318,22 +318,6 @@ Measured in Hertz (Hz)
 
 ---
 
-# Waves Are Everywhere
-
-Many technologies use oscillating signals:
-
-- music
-- radio
-- WiFi
-- Bluetooth
-- CPUs
-- HDMI
-- USB
-
-![bg contain right](assets/music-wave.avif)
-
----
-
 # Demo: 555 Timer LED Blinker
 
 Let's build an oscillator using the 555 timer integrated circuit.
@@ -535,16 +519,17 @@ Digital electronics rapidly change between HIGH and LOW to send information.
 
 ---
 
-# Modern Electronics Use Signals
+# Waves Are Everywhere
 
-Modern computers constantly send and receive waves.
+Many technologies use oscillating signals:
 
-- USB
-- HDMI
-- Ethernet
+- music
+- radio
 - WiFi
 - Bluetooth
-- audio
+- CPUs
+- HDMI
+- USB
 
 ![bg contain right](assets/em-waves-graphic.jpg)
 
