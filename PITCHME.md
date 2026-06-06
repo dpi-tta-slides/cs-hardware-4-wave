@@ -402,26 +402,6 @@ We can use the frequency tool on the multimeter
 
 ---
 
-# Sound Is A Wave
-
-Speakers convert electrical waves into sound waves.
-
-<!-- INSTRUCTOR NOTES
-
-A piezo speaker vibrates rapidly when voltage changes.
-
-Rapid vibration creates sound waves in air.
-
-Faster oscillation → higher pitch
-
-Slower oscillation → lower pitch
-
--->
-
-![bg contain right](assets/sound-wave-animation.gif)
-
----
-
 # Demo: Changing Frequency
 
 Changing resistance or capacitance changes:
@@ -443,6 +423,32 @@ Students should hear:
 Connect directly to music and instruments.
 
 -->
+
+---
+
+# Sound Is A Wave
+
+Speakers convert electrical waves into sound waves.
+
+<!-- INSTRUCTOR NOTES
+
+A piezo speaker vibrates rapidly when voltage changes.
+
+Rapid vibration creates sound waves in air.
+
+Faster oscillation → higher pitch
+
+Slower oscillation → lower pitch
+
+-->
+
+![bg contain right](assets/sound-wave-animation.gif)
+
+---
+
+# Headphone Jack
+
+![contain](assets/trrs.webp)
 
 ---
 
