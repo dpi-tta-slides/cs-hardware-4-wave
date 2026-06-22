@@ -428,6 +428,8 @@ Connect directly to music and instruments.
 
 # Sound Is A Wave
 
+A speaker creates sound when it moves back and forth.
+
 Speakers convert electrical waves into sound waves.
 
 <!-- INSTRUCTOR NOTES
@@ -437,8 +439,15 @@ A piezo speaker vibrates rapidly when voltage changes.
 Rapid vibration creates sound waves in air.
 
 Faster oscillation → higher pitch
-
 Slower oscillation → lower pitch
+
+- changing voltage → sound
+- constant voltage → no sound
+
+Connect speaker directly to battery.
+Students hear a click.
+Then silence.
+The speaker moved once and stopped.
 
 -->
 
@@ -446,13 +455,35 @@ Slower oscillation → lower pitch
 
 ---
 
-# Headphone Jack
+# Coupling Capacitor
 
-![contain](assets/trrs.webp)
+A coupling capacitor:
+
+- blocks steady voltage
+- passes changing signals
+
+This helps send sound to a speaker.
+
+<!-- TODO image -->
+![bg contain right](assets/capacitor-symbol.png)
+
+<!--
+
+INSTRUCTOR NOTES:
+
+Don't discuss impedance or AC theory.
+
+Just:
+
+steady voltage = blocked
+
+changing signal = passes
+
+-->
 
 ---
 
-# Demo: Electronic Piano
+# Demo: Audio Oscillator
 
 Build a simple tone generator using:
 
@@ -484,7 +515,7 @@ Timing circuits can fail subtly.
 
 # Lab Breakout #2
 
-## Electronic Piano
+## Audio Oscillator
 
 Goal:
 
@@ -493,6 +524,12 @@ Goal:
 - Observe waveform on oscilloscope
 
 ![bg contain right](assets/555-electric-piano-breadboard.png)
+
+---
+
+# Headphone Jack
+
+![contain](assets/trrs.webp)
 
 ---
 
