@@ -479,6 +479,24 @@ steady voltage = blocked
 
 changing signal = passes
 
+
+The 555 output contains two things:
+A changing signal (the sound)
+A steady average voltage
+The speaker only cares about the changing part.
+The coupling capacitor removes most of the steady voltage and lets the changing part reach the speaker more effectively.
+
+-->
+
+---
+
+![bg contain](assets/child-on-swing.jpeg)
+
+<!-- TODO: child on swing 
+
+Without the capacitor, it's like holding the swing off-center.
+With the capacitor, it's like pushing the swing back and forth around its resting position.
+
 -->
 
 ---
