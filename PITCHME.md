@@ -464,9 +464,6 @@ A coupling capacitor:
 
 This helps send sound to a speaker.
 
-<!-- TODO image -->
-![bg contain right](assets/capacitor-symbol.png)
-
 <!--
 
 INSTRUCTOR NOTES:
@@ -479,7 +476,6 @@ steady voltage = blocked
 
 changing signal = passes
 
-
 The 555 output contains two things:
 A changing signal (the sound)
 A steady average voltage
@@ -488,9 +484,7 @@ The coupling capacitor removes most of the steady voltage and lets the changing 
 
 -->
 
----
-
-![bg contain](assets/child-on-swing.jpeg)
+![bg contain right](assets/child-on-swing.jpeg)
 
 <!-- TODO: child on swing 
 
@@ -511,7 +505,9 @@ Build a simple tone generator using:
 - buttons
 - speaker
 
-![bg contain right](assets/555-electric-piano-breadboard.png)
+<!-- ![bg contain right](assets/555-electric-piano-breadboard.png) -->
+
+![bg contain right](assets/555-audio-oscillator-breadboard.png)
 
 ---
 
@@ -541,7 +537,9 @@ Goal:
 - Change pitch using buttons/resistors
 - Observe waveform on oscilloscope
 
-![bg contain right](assets/555-electric-piano-breadboard.png)
+<!-- ![bg contain right](assets/555-electric-piano-breadboard.png) -->
+
+![bg contain right](assets/555-audio-oscillator-breadboard.png)
 
 ---
 
